@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro'
+import Target from '../components/Target.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<Layout title="Welcome to Astro.">
+
+  <Target></Target>
+
+	<div class="flex justify-center gap-4 p-4">
+    <Button text="Aceptar" isGreen>
+      <Icon class='text-white inline-flex text-xl' name="mdi:like" />
+    </Button>
+    <Button text="Eliminar" isRed >
+      <Icon class='text-white inline-flex text-xl' name="mdi:trash" />
+    </Button>
+  </div>
+</Layout>
